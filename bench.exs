@@ -14,14 +14,14 @@ saxmerl_parser = fn {data, _} ->
   {:ok, _} = Saxmerl.parse_string(data, dynamic_atoms?: true)
 end
 
-sweet_xml_parser = fn {_, data} ->
-  SweetXml.parse(data)
+xmerl_parser = fn {_, data} ->
+  {_, _} = :xmerl_scan.string(data, [])
 end
 
 Benchee.run(
   %{
     "Saxy" => saxmerl_parser,
-    "SweetXml" => sweet_xml_parser
+    "xmerl" => xmerl_parser
   },
   bench_options
 )
