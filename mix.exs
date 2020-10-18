@@ -15,7 +15,8 @@ defmodule Saxmerl.MixProject do
   defp deps() do
     [
       {:saxy, "~> 1.2"},
-      {:sweet_xml, "~> 0.6", only: :test}
+      {:benchee, "~> 1.0", only: :dev},
+      {:sweet_xml, "~> 0.6", only: [:dev, :test]}
     ]
   end
 end
