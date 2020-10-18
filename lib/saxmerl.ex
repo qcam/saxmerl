@@ -2,7 +2,7 @@ defmodule Saxmerl do
   @doc """
   Parses XML document into Erlang [xmerl](http://erlang.org/doc/man/xmerl.html) format.
 
-  Xmerl format requires tags and attribute names to be atoms. By default Saxy does not
+  Xmerl format requires tags and attribute names to be atoms. By default Saxmerl does not
   create atoms dynamically, because it is dangerous. However, you can override this
   behaviour by specifying `dynamic_atoms?` to `true`. Please check out `String.to_atom/1`
   for more information about dynamic atom conversion.
