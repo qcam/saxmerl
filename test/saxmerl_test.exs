@@ -136,7 +136,7 @@ defmodule SaxmerlTest do
 
     test "maps match.xml" do
       xml = File.read!("test/support/fixtures/sweet_xml/match.xml")
-      assert {:ok, document} = parse(xml, atom_conversion: :to_atom)
+      assert {:ok, document} = parse(xml, dynamic_atoms?: true)
 
       result =
         document
@@ -159,7 +159,7 @@ defmodule SaxmerlTest do
     test "maps yahoo_fantasy.xml" do
       xml = File.read!("test/support/fixtures/sweet_xml/yahoo_fantasy.xml")
 
-      assert {:ok, document} = parse(xml, atom_conversion: :to_atom)
+      assert {:ok, document} = parse(xml, dynamic_atoms?: true)
 
       result =
         xmap(
