@@ -12,10 +12,10 @@ end
 
 ## Feature highlights
 
-* **Memory efficiency and better performance** - Several benchmarkings show that
-  Saxmerl usually use 4x less memory than `:xmerl` or SweetXml, and is usually
-  70-90% faster.
-* **XPath compatible** - Saxmerl parsed documents can be used with
+* **Memory efficiency and better performance** - Several benchmarks show that
+  Saxmerl usually uses 4x less memory than `:xmerl` or SweetXml, and is usually
+  70–90% faster.
+* **XPath compatible** - Saxmerl-parsed documents can be used with
   `:xmerl_xpath` or `SweetXml.xpath`.
 
 ## Limitations
