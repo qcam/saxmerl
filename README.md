@@ -6,7 +6,7 @@ Saxmerl is a parser written in Elixir that parses XML documents into Erlang `:xm
 
 ```elixir
 def deps() do
-  [{:saxmerl, "~> 0.1"}]
+  [{:saxmerl, "~> 0.2"}]
 end
 ```
 
